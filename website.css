@@ -1,0 +1,146 @@
+/* --- WordCamp Bhopal Hero Section (Simplified) --- */
+/* 1. Basic Hero Container Styles */
+.wp-block-cover.has-base-color.has-text-color.has-link-color {
+	position: relative;
+	overflow: hidden;
+/* This prevents any unexpected overflow issues */
+}
+
+/* 2. Heading and Image Animation */
+/* Add a fade-in animation to the "WordPress" heading */
+.main_hero_section_heading {
+	animation: fadeInDown 1.5s ease-out;
+}
+
+/* Add a fade-in and slide-up animation to the "Bhopal" image */
+.wp-block-image.aligncenter.size-full.is-resized {
+	animation: fadeInUp 1.5s ease-out;
+}
+
+/* Keyframes for the text and image animations */
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* 3. Responsive Adjustments */
+@media (max-width: 768px) {
+	.wp-block-cover.has-base-color {
+		min-height: 500px !important;
+	/* Adjust height for smaller screens */
+	}
+	
+	.main_hero_section_heading {
+		font-size: clamp(36px, 10vw, 50px) !important;
+	}
+	
+	.wp-block-image.aligncenter.size-full.is-resized img {
+		width: 180px !important;
+	/* Adjust image size on mobile */
+	}
+}
+
+/* --- Fade In Up Animation (CSS Only with Delay) --- */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ----------Homepage-section------ */
+.sponsor_sec {
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), #000E43), url('https://bhopal.wordcamp.org/2025/files/2025/06/as-a-SPONSOR.png');
+}
+
+.speaker_sec {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), #000E43), url('https://bhopal.wordcamp.org/2025/files/2025/06/as-a-SPEAKER.png');
+}
+
+.attendes_sec {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), #000E43), url('https://bhopal.wordcamp.org/2025/files/2025/06/as-a-ATTENDEE.png');
+}
+
+.as_a_spon {
+	margin-left: 0 !important;
+}
+
+/* -------button-globally------- */
+.join_button {
+	margin-right: 0 !important;
+}
+
+.wp-block-button__link {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	transition: all .3s ease;
+	overflow: hidden;
+}
+
+/* Arrow pseudo-element */
+.wp-block-button__link::after {
+	content: '→';
+	font-size: 16px;
+	transition: transform .3s ease;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+/* Hover effects */
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.wp-block-button__link:hover::after {
+	transform: translateX(4px);
+}
+
+.gif_about {
+	z-index: 10 !important;
+}
+
+.aboutbg {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url('https://bhopal.wordcamp.org/2025/files/2025/08/Group-58.png');
+	background-position: bottom;
+/*     border: 1px solid #c7c7c7;
+    border-radius: 20px; */
+}
