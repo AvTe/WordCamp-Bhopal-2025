@@ -183,32 +183,6 @@
 }
 
 /* Tier colors */
-.hdr-platinum {
-	background: linear-gradient(135deg,#3b6b70,#1bb3d4);
-}
-
-/* teal */
-.hdr-gold {
-	background: linear-gradient(135deg,#b07f1f,#ffd166);
-	color: #2b1900;
-}
-
-/* warm gold */
-.hdr-silver {
-	background: linear-gradient(135deg,#6b7280,#d7dbe0);
-	color: #071028;
-}
-
-/* cool silver */
-.hdr-bronze {
-	background: linear-gradient(135deg,#a9592d,#f0a372);
-}
-
-/* bronze */
-.hdr-party {
-	background: linear-gradient(135deg,#6b50b8,#c08cf0);
-}
-
 /* party purple */
 /* First header (label) darker */
 .col-label {
