@@ -183,6 +183,34 @@
 }
 
 /* Tier colors */
+.hdr-platinum {
+	background: #050A30;
+}
+
+/* teal */
+.hdr-gold {
+	background: #050A30;
+	color: #FFFFFF;
+}
+
+/* warm gold */
+.hdr-silver {
+	background: #050A30;
+	color: #FFFFFF;
+}
+
+/* cool silver */
+.hdr-bronze {
+	background: #050A30;
+	color: #FFFFFF;
+}
+
+/* bronze */
+.hdr-party {
+	background-color: #FF8C00;
+	border: none;
+}
+
 /* party purple */
 /* First header (label) darker */
 .col-label {
