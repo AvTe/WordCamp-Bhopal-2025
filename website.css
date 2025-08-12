@@ -144,3 +144,217 @@
 /*     border: 1px solid #c7c7c7;
     border-radius: 20px; */
 }
+
+.wcbhopal-wrapper {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 36px 12px;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: #0f1724;
+}
+
+/* Centering container but allowing grid to extend left/right visually */
+.wcbhopal-container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* ---------- Grid ---------- */
+/* first column (feature names) fixed, others flexible */
+.wcbhopal-grid {
+	display: grid;
+	grid-template-columns: 280px repeat(5, 1fr);
+	gap: 1px;
+	background: #dbe7f5;
+/* thin separators */
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+}
+
+/* Header cells */
+.wcbhopal-grid .col-header {
+	padding: 20px 16px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.15;
+}
+
+/* Tier colors */
+.hdr-platinum {
+	background: linear-gradient(135deg,#3b6b70,#1bb3d4);
+}
+
+/* teal */
+.hdr-gold {
+	background: linear-gradient(135deg,#b07f1f,#ffd166);
+	color: #2b1900;
+}
+
+/* warm gold */
+.hdr-silver {
+	background: linear-gradient(135deg,#6b7280,#d7dbe0);
+	color: #071028;
+}
+
+/* cool silver */
+.hdr-bronze {
+	background: linear-gradient(135deg,#a9592d,#f0a372);
+}
+
+/* bronze */
+.hdr-party {
+	background: linear-gradient(135deg,#6b50b8,#c08cf0);
+}
+
+/* party purple */
+/* First header (label) darker */
+.col-label {
+	background: #0b1220;
+}
+
+/* Feature column (first column) */
+.wcbhopal-grid .feature {
+	background: linear-gradient(180deg,#ffffff,#f7fbff);
+	padding: 16px 18px;
+	font-weight: 600;
+	color: #092033;
+	text-align: left;
+}
+
+/* Cells (tier columns) */
+.wcbhopal-grid .cell {
+	background: #fff;
+	padding: 16px;
+	text-align: center;
+	font-size: 15px;
+	color: #0f1724;
+}
+
+/* alternating row background for better reading */
+.wcbhopal-grid .feature:nth-of-type(even),
+.wcbhopal-grid .cell:nth-of-type(odd) {
+	background: #fbfdff;
+}
+
+/* subtle hover to highlight row group (feature + 5 cells) */
+.wcbhopal-grid .row-hover:hover ~ .row-hover {
+}
+
+/* We'll create a "row" effect by grouping with :nth-child selectors below */
+.wcbhopal-grid > .feature:hover,
+.wcbhopal-grid > .feature:hover + .cell,
+.wcbhopal-grid > .feature:hover ~ .cell:nth-child(-n + 6) {
+/* no-op (can't easily select the whole row); kept lightweight for perf */
+}
+
+/* ---------- Icons ---------- */
+.wcb-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+}
+
+.icon-check {
+	fill: #16a34a;
+}
+
+.icon-cross {
+	fill: #dc2626;
+}
+
+/* emphasized cells (costs) */
+.cell.cost {
+	font-weight: 800;
+	font-size: 16px;
+	color: #0b1220;
+	background: linear-gradient(180deg,#fff9eb,#fff5e6);
+}
+
+/* small muted text */
+.small-muted {
+	display: block;
+	font-size: 12px;
+	color: #64748b;
+	margin-top: 6px;
+}
+
+/* CTA styles (appear in last row optionally) */
+.wcb-cta {
+	display: inline-block;
+	padding: 10px 18px;
+	border-radius: 8px;
+	background: #0f1724;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	box-shadow: 0 8px 20px rgba(15,23,36,0.12);
+}
+
+/* Responsive: allow horizontal scroll on small screens, reduce column widths */
+@media (max-width: 1100px) {
+	.wcbhopal-grid {
+		grid-template-columns: 220px repeat(5, minmax(160px, 1fr));
+	}
+}
+
+@media (max-width: 780px) {
+	.wcbhopal-grid {
+		grid-template-columns: 180px repeat(5, 220px);
+		overflow-x: auto;
+	}
+	
+	.wcbhopal-wrapper {
+		padding: 20px 6px;
+	}
+	
+	.wcbhopal-container {
+		padding: 0 6px;
+	}
+}
+
+/* Make sponsorship table full width on larger screens while keeping it readable on smaller ones */
+.sponsorship-table {
+	width: 100vw;
+/* Full viewport width */
+	margin-left: calc(-50vw + 50%);
+/* Centers and breaks out of content width */
+}
+
+.sponsorship-table table {
+	width: 80%;
+	border-collapse: collapse;
+}
+
+.sponsorship-table th,
+.sponsorship-table td {
+	padding: 12px 15px;
+	text-align: center;
+}
+
+.sponsorship-table thead {
+	background-color: #1e73be;
+/* WordCamp blue */
+	color: #fff;
+}
+
+.sponsorship-table tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+	.sponsorship-table {
+		width: 100%;
+		margin-left: 0;
+		overflow-x: auto;
+	}
+	
+	.sponsorship-table table {
+		font-size: 14px;
+	}
+}
