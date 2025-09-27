@@ -890,3 +890,83 @@ input[type="url"]:focus {
 		transform: none;
 	}
 }
+
+.wp-block-jetpack-contact-form {
+	margin-top: 10px;
+	gap: 10px !important;
+}
+
+@media only screen and (max-width: 767px),only screen and (max-device-width: 480px) {
+	.hero-section-heading {
+		text-align: center;
+	}
+	
+	.hero-section-heading .wp-block-buttons {
+		justify-content: center;
+	}
+	
+	.hero-section-heading {
+		padding-top: 60% !important;
+	}
+	
+	img.wp-block-cover__image-background.wp-image-2433.size-large {
+		object-position: 90% 100% !important;
+	}
+	
+	.hero-section-heading h2 {
+		font-size: 35px !important;
+	}
+	
+	.heading-wordcamp-hero {
+		padding-top: 30px !important;
+	}
+	
+	.header-hero-section-logo {
+		width: 30%;
+	}
+	
+	.wp-block-navigation_responsive-container.is-nenu-open {
+		padding: 20px !important;
+	}
+	
+	.nav-bar {
+		padding: 20px;
+	}
+	
+	#modal-2 {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.wp-container-core-group-is-layout-863cc62d.wp-block-group-is-layout-constrained {
+		padding: 0 !important;
+	}
+	
+	.about-wordcamp-section .wp-block-image.aligncenter.size-full.is-resized img {
+		width: 380px !important;
+	}
+	
+	.recap-wordcamp-section {
+		padding: 0 !important;
+	}
+	
+	.sponsors-section {
+		grid-template-columns: 2fr 2fr !important;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.wp-block-cover.alignfull.is-light.has-custom-content-position.is-position-center-left.hero-section-wordcamp.has-base-color.has-text-color {
+		background-image: url('https://bhopal.wordcamp.org/2025/files/2025/09/WordCamp-Bhopal.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	img.wp-block-cover__image-background.wp-image-2433.size-large {
+		display: none;
+	}
+}
