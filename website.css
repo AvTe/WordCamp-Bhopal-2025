@@ -360,3 +360,7 @@
 		font-size: 14px;
 	}
 }
+
+.wp-block-jetpack-contact-form {
+	gap: 10px;
+}
