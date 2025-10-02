@@ -476,7 +476,6 @@ input[type="url"]:focus {
 	background: #fff;
 	padding: 2rem;
 	border-radius: 10px;
-	box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .page-id-736 #tix .attendee-form .form-row,
