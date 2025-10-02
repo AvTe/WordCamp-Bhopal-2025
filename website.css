@@ -447,6 +447,14 @@ input[type="url"]:focus {
 	font-size: 1.05rem;
 }
 
+.tix-ticket-2589 {
+    border: 1px solid #ffc383;
+}
+
+.tix-ticket-1372 {
+	border: 1px solid #ffc383; 
+}
+
 .page-id-736 #tix .tix-submit,
 .page-id-736 #tix .tix-order .button,
 .page-id-736 #tix .register-btn,
