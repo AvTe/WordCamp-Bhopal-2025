@@ -501,11 +501,12 @@ input[type="url"]:focus {
 }
 
 #tix-coupon-link {
-    background-color: #FE730E;
-    color: white;
-    padding: 15px 30px;
+	border: 2px solid #FE730E;
+    color: #FE730E;
+    padding: 12px;
     border-radius: 10px;
 }
+
 
 .page-id-736 #tix .attendee-form .form-row,
 .page-id-736 #tix form .form-row {
