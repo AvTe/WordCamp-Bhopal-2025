@@ -1210,12 +1210,10 @@ object-position: 90% 100% !important;
             position: sticky;
             left: 0;
             z-index: 10;
-            border-top-left-radius: 20px;
         }
 
         .sponsor-table th:last-child {
             border-right: none;
-            border-top-right-radius: 20px;
         }
 
         .tier-name {
