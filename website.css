@@ -1176,7 +1176,6 @@ object-position: 90% 100% !important;
 
         .table-container {
             overflow-x: auto;
-            padding: 20px;
             -webkit-overflow-scrolling: touch;
             scroll-behavior: smooth;
         }
