@@ -505,7 +505,7 @@ object-position: 90% 100% !important;
     padding: 0 !important;
 }
 	.sponsors-section {
-    grid-template-columns: 2fr 2fr !important;
+    grid-template-columns: 2fr 2fr;
     gap: 10px;
 }
 }
